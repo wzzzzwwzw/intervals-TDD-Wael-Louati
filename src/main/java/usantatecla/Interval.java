@@ -12,7 +12,7 @@ public class Interval {
 	}
 
 	public boolean intersect(Interval interval) {
-		return false;
+		return true;
 	}
 
 	public boolean include(double value) {

@@ -7,7 +7,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class IntervalTest {
-  
+
+  IntervalBuilder intervalBuilder2 = new IntervalBuilder();
   private Point left = new Point(-2.2);
   private Point right = new Point(4.4);
   private IntervalBuilder intervalBuilder;
@@ -24,7 +25,7 @@ public class IntervalTest {
     Point left2 = new Point(-1.2);
     Point right2 = new Point(3.4);
     Interval interval1 = this.intervalBuilder.closed(left.getEquals()).closed(right.getEquals()).build();
-    Interval interval2 = this.intervalBuilder.closed(left2.getEquals()).closed(right2.getEquals()).build();
+    Interval interval2 = intervalBuilder2.closed(left2.getEquals()).closed(right2.getEquals()).build();
     assertTrue(interval1.intersect(interval2));
   }
 
