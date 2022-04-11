@@ -47,8 +47,10 @@
         <jacoco.version>0.8.5</jacoco.version>
         <!-- JUnit -->
         <junit.platform.version>1.2.0</junit.platform.version>
-		<!-- various -->
+        <!-- various -->
         <itextpdf.version>7.0.2</itextpdf.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
     <dependencies>
