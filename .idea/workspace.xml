@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="122cf91f-5319-4a6b-8285-74ad264c3c9b" name="Changes" comment="Test Green">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="122cf91f-5319-4a6b-8285-74ad264c3c9b" name="Changes" comment="Test Red">
       <change beforePath="$PROJECT_DIR$/src/main/java/usantatecla/Interval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/usantatecla/Interval.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/usantatecla/IntervalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/usantatecla/IntervalTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/usantatecla/IntervalTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/usantatecla/IntervalTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649647681623</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Test Red">
+      <created>1649647909414</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1649647909414</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -130,6 +134,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add Intersect Method and IntervalTest" />
     <MESSAGE value="Test Green" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test Green" />
+    <MESSAGE value="Test Red" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test Red" />
   </component>
 </project>
