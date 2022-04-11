@@ -8,33 +8,32 @@ import org.junit.jupiter.api.Test;
 
 public class IntervalTest {
 
-  IntervalBuilder intervalBuilder2 = new IntervalBuilder();
+
   private Point left = new Point(-2.2);
   private Point right = new Point(4.4);
   private IntervalBuilder intervalBuilder;
+  private IntervalBuilder intervalBuilder2;
 
   @BeforeEach
   public void before(){
     this.left = new Point(-2.2);
     this.right = new Point(4.4);
-    this.intervalBuilder = new IntervalBuilder();
+    this.intervalBuilder2 = new IntervalBuilder();
   }
 
   @Test
   public void givenIntervalWhenIntersectWithIntervalThenTrue() {
-    Point left2 = new Point(-1.2);
-    Point right2 = new Point(3.4);
+
     Interval interval1 = this.intervalBuilder.closed(left.getEquals()).closed(right.getEquals()).build();
-    Interval interval2 = intervalBuilder2.closed(left2.getEquals()).closed(right2.getEquals()).build();
+    Interval interval2 = this.intervalBuilder2.closed(left.getGreater()).closed(right.getLess()).build();
     assertTrue(interval1.intersect(interval2));
+
   }
   @Test
   public void givenIntervalWhenIntersectWithIntervalThenFalse() {
-    Point left2 = new Point(5.2);
-    Point right2 = new Point(6.4);
-    IntervalBuilder intervalBuilder2 = new IntervalBuilder();
+    
     Interval interval1 = this.intervalBuilder.closed(left.getEquals()).closed(right.getEquals()).build();
-    Interval interval2 = intervalBuilder2.closed(left2.getEquals()).closed(right2.getEquals()).build();
+    Interval interval2 = this.intervalBuilder2.closed(right.getGreater()).closed(right.getGreater()).build();
     assertFalse(interval1.intersect(interval2));
   }
 
