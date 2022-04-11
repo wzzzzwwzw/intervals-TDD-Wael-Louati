@@ -28,6 +28,15 @@ public class IntervalTest {
     Interval interval2 = intervalBuilder2.closed(left2.getEquals()).closed(right2.getEquals()).build();
     assertTrue(interval1.intersect(interval2));
   }
+  @Test
+  public void givenIntervalWhenIntersectWithIntervalThenFalse() {
+    Point left2 = new Point(5.2);
+    Point right2 = new Point(6.4);
+    IntervalBuilder intervalBuilder2 = new IntervalBuilder();
+    Interval interval1 = this.intervalBuilder.closed(left.getEquals()).closed(right.getEquals()).build();
+    Interval interval2 = intervalBuilder2.closed(left2.getEquals()).closed(right2.getEquals()).build();
+    assertFalse(interval1.intersect(interval2));
+  }
 
   @Test
   public void givenIntervaOpenOpenlwhenIncludeWithIncludedValueThenTrue() {
