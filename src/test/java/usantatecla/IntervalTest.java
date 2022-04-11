@@ -98,6 +98,27 @@ public class IntervalTest {
     assertTrue(interval1.intersect(interval2));
   }
 
+  @Test
+  public void givenIntervalClosedWhenIntersectWithIntervalOpenLimitValueThenFalse() {
+    Interval interval1 = this.intervalBuilder.closed(left.getEquals()).closed(right.getEquals()).build();
+    Interval interval2 = this.intervalBuilder2.open(right.getEquals()).closed(right.getGreater()).build();
+    assertFalse(interval1.intersect(interval2));
+  }
+
+  @Test
+  public void givenIntervalOpenWhenIntersectWithIntervalClosedLimitValueThenFalse() {
+    Interval interval1 = this.intervalBuilder.closed(left.getEquals()).open(right.getEquals()).build();
+    Interval interval2 = this.intervalBuilder2.closed(right.getEquals()).closed(right.getGreater()).build();
+    assertFalse(interval1.intersect(interval2));
+  }
+
+  @Test
+  public void givenIntervalOpenWhenIntersectWithIntervalOpenLimitValueThenFalse() {
+    Interval interval1 = this.intervalBuilder.closed(left.getEquals()).open(right.getEquals()).build();
+    Interval interval2 = this.intervalBuilder2.open(right.getEquals()).closed(right.getGreater()).build();
+    assertFalse(interval1.intersect(interval2));
+  }
+
 
 
 }
