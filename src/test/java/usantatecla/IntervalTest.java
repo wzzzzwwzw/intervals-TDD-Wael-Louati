@@ -22,7 +22,7 @@ public class IntervalTest {
   }
 
   @Test
-  public void givenIntervalWhenIntersectWithIntervalThenTrue() {
+  public void  givenIntervalWhenIntersectWithIntervalWithinThenTrue() {
 
     Interval interval1 = this.intervalBuilder.closed(left.getEquals()).closed(right.getEquals()).build();
     Interval interval2 = this.intervalBuilder2.closed(left.getGreater()).closed(right.getLess()).build();
@@ -30,8 +30,8 @@ public class IntervalTest {
 
   }
   @Test
-  public void givenIntervalWhenIntersectWithIntervalThenFalse() {
-    
+  public void givenIntervalWhenIntersectWithIntervalOutsideThenFalse() {
+
     Interval interval1 = this.intervalBuilder.closed(left.getEquals()).closed(right.getEquals()).build();
     Interval interval2 = this.intervalBuilder2.closed(right.getGreater()).closed(right.getGreater()).build();
     assertFalse(interval1.intersect(interval2));
@@ -83,5 +83,21 @@ public class IntervalTest {
     assertTrue(interval.include(right.getEquals()));
     assertFalse(interval.include(right.getGreater()));
   }
+
+  @Test
+  public void givenIntervalWhenIntersectWithIntervalLimitValueThenTrue() {
+    Interval interval1 = this.intervalBuilder.closed(left.getEquals()).closed(right.getEquals()).build();
+    Interval interval2 = this.intervalBuilder2.closed(right.getEquals()).closed(right.getGreater()).build();
+    assertTrue(interval1.intersect(interval2));
+  }
+
+  @Test
+  public void givenIntervalWhenIntersectWithIntervalPartiallyWithinThenTrue() {
+    Interval interval1 = this.intervalBuilder.closed(left.getEquals()).closed(right.getEquals()).build();
+    Interval interval2 = this.intervalBuilder2.closed(left.getGreater()).closed(right.getGreater()).build();
+    assertTrue(interval1.intersect(interval2));
+  }
+
+
 
 }

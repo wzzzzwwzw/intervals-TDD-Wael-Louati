@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="122cf91f-5319-4a6b-8285-74ad264c3c9b" name="Changes" comment="Test Green ( Update intersect method )">
+    <list default="true" id="122cf91f-5319-4a6b-8285-74ad264c3c9b" name="Changes" comment="Refactor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/usantatecla/Interval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/usantatecla/Interval.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/usantatecla/IntervalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/usantatecla/IntervalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/usantatecla/IntervalTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/usantatecla/IntervalTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +33,8 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
   </component>
-  <component name="RunManager" selected="JUnit.IntervalTest.givenIntervalWhenIntersectWithIntervalThenFalse">
-    <configuration name="IntervalTest.givenIntervaOpenOpenlwhenIncludeWithIncludedValueThenTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.IntervalTest.givenIntervalWhenIntersectWithIntervalLimitValueThenTrue">
+    <configuration name="IntervalTest.givenIntervaOpenOpenlwhenIncludeWithInclude5dValueThenTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="intervals" />
       <extension name="coverage">
         <pattern>
@@ -42,7 +44,39 @@
       </extension>
       <option name="PACKAGE_NAME" value="usantatecla" />
       <option name="MAIN_CLASS_NAME" value="usantatecla.IntervalTest" />
-      <option name="METHOD_NAME" value="givenIntervaOpenOpenlwhenIncludeWithIncludedValueThenTrue" />
+      <option name="METHOD_NAME" value="givenIntervaOpenOpenlwhenIncludeWithInclude5dValueThenTrue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IntervalTest.givenIntervalWhenIntersectWithIntervalLimitValueThenTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="intervals" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="usantatecla.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="usantatecla" />
+      <option name="MAIN_CLASS_NAME" value="usantatecla.IntervalTest" />
+      <option name="METHOD_NAME" value="givenIntervalWhenIntersectWithIntervalLimitValueThenTrue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IntervalTest.givenIntervalWhenIntersectWithIntervalPartiallyWithinThenTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="intervals" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="usantatecla.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="usantatecla" />
+      <option name="MAIN_CLASS_NAME" value="usantatecla.IntervalTest" />
+      <option name="METHOD_NAME" value="givenIntervalWhenIntersectWithIntervalPartiallyWithinThenTrue" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -82,9 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.IntervalTest.givenIntervalWhenIntersectWithIntervalLimitValueThenTrue" />
+        <item itemvalue="JUnit.IntervalTest.givenIntervalWhenIntersectWithIntervalPartiallyWithinThenTrue" />
+        <item itemvalue="JUnit.IntervalTest.givenIntervaOpenOpenlwhenIncludeWithInclude5dValueThenTrue" />
         <item itemvalue="JUnit.IntervalTest.givenIntervalWhenIntersectWithIntervalThenFalse" />
         <item itemvalue="JUnit.IntervalTest.givenIntervalWhenIntersectWithIntervalThenTrue" />
-        <item itemvalue="JUnit.IntervalTest.givenIntervaOpenOpenlwhenIncludeWithIncludedValueThenTrue" />
       </list>
     </recent_temporary>
   </component>
@@ -125,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649647959954</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Refactor">
+      <created>1649648215156</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1649648215156</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -144,6 +187,7 @@
     <MESSAGE value="Test Green" />
     <MESSAGE value="Test Red" />
     <MESSAGE value="Test Green ( Update intersect method )" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test Green ( Update intersect method )" />
+    <MESSAGE value="Refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor" />
   </component>
 </project>
